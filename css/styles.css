@@ -63,15 +63,15 @@ body {
   padding-bottom: 94px;
 }
 
-/* top-line */
+/* page-header */
 
-.top .container {
+.page-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.top {
+.page-header {
   background-color: var(--white-color);
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -80,14 +80,14 @@ body {
   padding-bottom: 32px;
 }
 
-.top-list {
+.nav_list {
   display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.top-nav {
+.nav {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.14;
@@ -96,7 +96,7 @@ body {
   align-items: center;
 }
 
-.top-logo {
+.nav_logo {
   font-family: 'Raleway', sans-serif;
   color: var(--black-color);
   font-weight: 700;
@@ -108,30 +108,30 @@ body {
   margin-right: 50px;
 }
 
-.top-logo-part {
+.nav_logo-part {
   color: var(--accent-color);
 }
 
-.top-item {
+.nav_item {
   margin-right: 50px;
 }
 
-.top-item:last-child {
+.nav_item:last-child {
   margin-right: 0;
 }
 
-.top-contacts {
+.contacts {
   display: flex;
   align-items: center;
 }
 
-.top-link:hover,
-.top-link:focus {
+.nav_link:hover,
+.nav_link:focus {
   color: var(--accent-text-color);
   text-decoration: none;
 }
 
-.top-link {
+.nav_link {
   color: var(--main-text-color);
   display: block;
   text-decoration: none;
@@ -139,18 +139,18 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-link .current {
+.nav_link .current {
   color: var(--accent-text-color);
 }
 
 .current {
   color: var(--accent-text-color);
 }
-.top-list .top-link {
+.nav_list .nav_link {
   position: relative;
 }
 
-.top-link.current:after {
+.nav_link.current:after {
   display: block;
   content: '';
   position: absolute;
@@ -165,41 +165,41 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-link.current:after {
+.nav_link.current:after {
   opacity: 1;
   transform: scaleX(1);
 }
 
-.top-link.current:after {
+.nav_link.current:after {
   opacity: 1;
   transform: scaleX(1);
 }
 
-.top-mail:hover,
-.top-mail:focus {
+.contacts_mail:hover,
+.contacts-mail:focus {
   color: var(--accent-text-color);
   text-decoration: none;
 }
 
-.top-mail {
+.contacts_mail {
   display: flex;
   align-items: center;
   color: var(--secondary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-tel:hover,
-.top-tel:focus {
+.contacts_tel:hover,
+.contacts_tel:focus {
   color: var(--accent-text-color);
   text-decoration: none;
 }
 
-.top-tel {
+.contacts_tel {
   color: var(--secondary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-contacts {
+.contacts {
   font-weight: 600;
   font-size: 14px;
   line-height: 1.14;
@@ -217,13 +217,13 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.top-mail:hover .mail-icon,
-.top-mail:focus .mail-icon {
+.contacts_mail:hover .mail-icon,
+.contacts_mail:focus .mail-icon {
   fill: var(--accent-color);
 }
 
-.top-tel:hover .tel-icon,
-.top-tel:focus .tel-icon {
+.contacts_tel:hover .tel-icon,
+.contacts_tel:focus .tel-icon {
   fill: var(--accent-color);
 }
 
