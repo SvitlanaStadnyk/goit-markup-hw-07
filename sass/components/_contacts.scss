@@ -1,0 +1,124 @@
+.address__link {
+  color: var(--white-color);
+  font-style: normal;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tel-link {
+  color: var(--white-color);
+  font-style: normal;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__tel {
+  color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail-link {
+  color: var(--white-color);
+  font-style: normal;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__mail {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address__list {
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  display: block;
+}
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link:hover,
+.address__link:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.mail-link:hover,
+.mail-link:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts__item {
+  margin-right: 50px;
+}
+
+.contacts__item:last-child {
+  margin-right: 0;
+}
+
+.contacts__mail:hover,
+.contacts__mail:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.contacts__mail {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__tel:hover,
+.contacts__tel:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.contacts__tel {
+  color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail-icon {
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tel-icon {
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__mail:hover .mail-icon,
+.contacts__mail:focus .mail-icon {
+  fill: var(--accent-color);
+}
+
+.contacts__tel:hover .tel-icon,
+.contacts__tel:focus .tel-icon {
+  fill: var(--accent-color);
+}

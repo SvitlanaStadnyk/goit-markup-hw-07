@@ -24,16 +24,14 @@
 }
 
 .filters__btn {
-  background-color: var(--main-btn-color);
+  background-color: var(--secondary-bg-color);
   color: var(--main-text-color);
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.63;
   letter-spacing: var(--letter-spacing);
   padding: 6px 22px;
-  border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filters__btn:hover,
