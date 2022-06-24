@@ -1,1 +1,20 @@
+@import './utils/vars';
+@import './base/common';
+@import './base/reset';
+@import './utils/hidden';
+
+@import './components/modal';
+@import './components/container';
+@import './components/section';
+@import './components/btn';
+
 @import './layout/about';
+@import './layout/clients';
+@import './layout/features';
+@import './layout/header';
+@import './layout/main';
+@import './layout/team';
+@import './layout/filtres';
+@import './layout/projects';
+@import './layout/footer';
+@import './layout/subscription';

@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --accent-color: #2196f3;
   --secondary-text-color: #757575;
   --main-text-color: #212121;
@@ -10,8 +10,8 @@
   --border-color: #eeeeee;
   --main-icon-color: #afb1b8;
   --letter-spacing: 0.03em;
-}
-
+} */
+/* 
 p,
 h1,
 h2,
@@ -51,34 +51,34 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
-}
+} */
 
 /*Утилиты*/
-.list {
+/* .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
-}
-.btn {
+} */
+/* .btn {
   font-family: inherit;
   border: none;
   cursor: pointer;
-}
-.container {
+} */
+/* .container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-}
+} */
 
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
 /* header */
-
+/* 
 .header .container {
   display: flex;
   align-items: center;
@@ -243,10 +243,10 @@ body {
 .contacts__tel:hover .tel-icon,
 .contacts__tel:focus .tel-icon {
   fill: var(--accent-color);
-}
+} */
 
 /*footer*/
-.address {
+/* .address {
   background-color: var(--dark-grey-color);
   color: var(--white-color);
   letter-spacing: var(--letter-spacing);
@@ -380,10 +380,10 @@ body {
 }
 .footer-soc-icon {
   fill: var(--white-color);
-}
+} */
 
 /*subscription*/
-
+/* 
 .subscription__details {
   display: flex;
 }
@@ -456,10 +456,10 @@ body {
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
   outline: none;
-}
+} */
 
 /*index-main*/
-.main {
+/* .main {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
@@ -516,10 +516,10 @@ body {
   line-height: 1.88;
   color: var(--white-color);
   background-color: var(--accent-color);
-}
+} */
 
 /*index-features*/
-
+/* 
 .features {
   background-color: var(--white-color);
   padding-bottom: 0px;
@@ -565,12 +565,59 @@ body {
   letter-spacing: var(--letter-spacing);
   color: var(--secondary-text-color);
   width: 270px;
-}
+} */
 
 /*index-about-us*/
+/* .about {
+  background-color: var(--white-color);
+}
+
+.about__image {
+  position: relative;
+}
+
+.about__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  width: 100%;
+  height: 70px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: var(--letter-spacing);
+  color: var(--main-text-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.about__item {
+  margin-right: 30px;
+}
+
+.about__item:last-child {
+  margin-right: 0;
+} */
 
 /*index-our-team*/
-.team {
+/* .team {
   background-color: var(--main-btn-color);
 }
 
@@ -662,9 +709,9 @@ body {
   color: var(--secondary-text-color);
   text-align: center;
   margin-bottom: 16px;
-}
+} */
 /*client*/
-
+/* 
 .clients__title {
   font-weight: 700;
   font-size: 36px;
@@ -715,10 +762,10 @@ body {
   fill: var(--main-icon-color);
   justify-content: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /*portfolio-filters*/
-
+/* 
 .filters {
   background-color: var(--white-color);
   color: var(--main-text-color);
@@ -763,10 +810,10 @@ body {
   background-color: var(--accent-color);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /*portfolio-project*/
-
+/* 
 .project__list {
   display: flex;
   flex-wrap: wrap;
@@ -898,9 +945,9 @@ body {
   padding-left: 24px;
   padding-right: auto;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 /*modal*/
-
+/* 
 .backdrop {
   width: 100%;
   height: 100%;
@@ -989,12 +1036,11 @@ body {
   padding-left: 42px;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+}
   /* box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 3px rgba(0, 0, 0, 0.12); */
-}
 
-.modal__input:focus {
+/* .modal__input:focus {
   border-color: var(--accent-color);
 }
 
@@ -1030,9 +1076,6 @@ body {
   cursor: pointer;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 3px rgba(0, 0, 0, 0.12); */
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -1113,4 +1156,4 @@ body {
 .agreement__link {
   margin-left: 5px;
   color: var(--accent-text-color);
-}
+} */
