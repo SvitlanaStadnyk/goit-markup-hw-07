@@ -3,10 +3,9 @@
     display: flex;
   }
   &__text {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: $letter-spacing;
+    @extend %textStyle;
+    $lh: 1.17;
+    $letter-spacing: $letter-spacing;
     text-transform: uppercase;
     font-style: normal;
     color: rgba(255, 255, 255, 1);
@@ -16,16 +15,15 @@
   &__btn {
     background-color: $accent-color;
     color: $white-color;
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+    $fw: 700;
+    $lh: 1.88;
+    $ls: 0.06em;
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding-left: 29px;
     padding-right: 28px;
-    display: flex;
-    align-items: center;
+    @extend %align-list;
     justify-content: center;
     width: 200px;
     height: 50px;
@@ -45,10 +43,10 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     background-color: inherit;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: $letter-spacing;
+    $fw: 400;
+    $fs: 16px;
+    $lh: 1.25;
+    $ls: $letter-spacing;
     color: rgba(255, 255, 255, 0.6);
     margin-right: 12px;
     outline: none;

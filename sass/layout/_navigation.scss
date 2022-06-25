@@ -1,10 +1,9 @@
 .nav {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
+  $fw: 600;
+  $fs: 14px;
+  $lh: 1.14;
+  $ls: 0.02em;
+  @extend %align-list;
   &__list {
     display: flex;
     padding: 0;

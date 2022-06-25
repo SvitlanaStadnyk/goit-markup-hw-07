@@ -1,10 +1,10 @@
 .filters {
   background-color: $white-color;
   color: $main-text-color;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: $letter-spacing;
+  $fw: 600;
+  $fs: 16px;
+  $lh: 1.62;
+  $ls: $letter-spacing;
   padding-top: 97px;
   &__list {
     display: flex;
@@ -21,9 +21,9 @@
   &__btn {
     background-color: $secondary-bg-color;
     color: $main-text-color;
-    font-weight: 500;
-    line-height: 1.63;
-    letter-spacing: $letter-spacing;
+    $fw: 500;
+    $lh: 1.63;
+    $ls: $letter-spacing;
     padding: 6px 22px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);

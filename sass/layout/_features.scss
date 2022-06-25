@@ -6,9 +6,8 @@
     flex-direction: row;
   }
   &__image {
-    display: flex;
+    @extend %align-list;
     justify-content: center;
-    align-items: center;
     border-radius: 4px;
     height: 120px;
     background-color: rgba(245, 244, 250, 1);
@@ -21,20 +20,19 @@
     }
   }
   &__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: $letter-spacing;
+    @extend %textStyle;
+    $lh: 1.14;
+    $ls: $letter-spacing;
     color: $main-text-color;
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: auto;
   }
   &__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: $letter-spacing;
+    $fw: 400;
+    $fs: 14px;
+    $lh: 1.71;
+    $ls: $letter-spacing;
     color: $secondary-text-color;
     width: 270px;
   }
