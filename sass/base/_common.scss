@@ -1,6 +1,6 @@
 body {
-  background-color: var(--white-color);
-  color: var(--main-text-color);
+  background-color: $white-color;
+  color: $main-text-color;
   font-family: 'Roboto', sans-serif;
 }
 /*Утилиты*/
@@ -9,4 +9,8 @@ body {
 }
 .link {
   text-decoration: none;
+}
+
+.current {
+  color: $accent-color;
 }

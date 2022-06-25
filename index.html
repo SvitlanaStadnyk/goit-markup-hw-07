@@ -42,17 +42,17 @@
             </li>
           </ul>
         </nav>
-        <ul class="contacts">
-          <li class="contacts__item list">
-            <a class="contacts__mail link" href="mailto:info@devstudio.com">
-              <svg class="mail-icon" width="16" height="12">
+        <ul class="contacts__list contacts__list--header">
+          <li class="contacts__item contacts__item--header list">
+            <a class="mail__link mail__link--header link" href="mailto:info@devstudio.com">
+              <svg class="mail__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="contacts__item list">
-            <a class="contacts__tel link" href="tel:+380961111111">
-              <svg class="tel-icon" width="10" height="16">
+            <a class="tel__link tel__link--header link" href="tel:+380961111111">
+              <svg class="tel__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -377,12 +377,12 @@
     <footer>
       <address class="address">
         <div class="container">
-          <div class="footer__address">
+          <div class="contacts">
             <a class="logo logo--light" href="index.html">
               <span class="logo-part logo-part--light">Web</span>Studio</a
             >
-            <ul class="address__list list">
-              <li class="address__item">
+            <ul class="contacts__list contacts__list--footer list">
+              <li class="contacts__item contacts__item--footer">
                 <a
                   class="address__link link"
                   href="https://goo.gl/maps/U8D8VqJZEQFio7qh9"
@@ -391,11 +391,11 @@
                   >г. Киев, пр-т Леси Украинки, 26a</a
                 >
               </li>
-              <li class="address__item">
-                <a class="mail-link link" href="mailto:info@example.com">info@example.com</a>
+              <li class="contacts__item contacts__item--footer">
+                <a class="mail__link mail__link--footer link" href="mailto:info@example.com">info@example.com</a>
               </li>
-              <li class="address__item">
-                <a class="tel-link link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="contacts__item contacts__item--footer">
+                <a class="tel__link tel__link--footer link" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </div>
@@ -483,7 +483,7 @@
               ></textarea>
             </div>
             <div class="modal__agreement">
-          <div class="modal-field-check">
+          <div class="agreement__check">
             <input
               type="checkbox"
               name="agreement"
