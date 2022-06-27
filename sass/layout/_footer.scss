@@ -1,7 +1,7 @@
 .address {
-  background-color: $bg-color;
-  color: $white-color;
-  letter-spacing: $letter-spacing;
+  background-color: getColor ('color-bg');
+  color: getColor ('color-white');
+  letter-spacing: var(--letter-spacing);
   padding-top: 60px;
   padding-bottom: 60px;
   display: block;

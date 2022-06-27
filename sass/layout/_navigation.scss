@@ -20,7 +20,7 @@
         border-radius: 2px;
         width: 100%;
         height: 4px;
-        background-color: $accent-color;
+        background-color: getColor ('color-accent');
         opacity: 0;
         transform: scale(0);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -34,17 +34,17 @@
     }
   }
   &__link {
-    color: $main-text-color;
+    color: getColor ('color-main-text');
     display: block;
     text-decoration: none;
     width: 100%;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      color: $accent-color;
+      color: getColor ('color-accent');
       text-decoration: none;
       .current {
-        color: $accent-color;
+        color: getColor ('color-accent');
         &:after {
           opacity: 1;
           transform: scaleX(1);

@@ -5,7 +5,7 @@
   &__text {
     @extend %textStyle;
     $lh: 1.17;
-    $ls: $letter-spacing;
+    $ls: var(--letter-spacing);
     text-transform: uppercase;
     font-style: normal;
     margin-bottom: 16px;
@@ -30,11 +30,16 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      background-color: $accent-color;
-      .socials__icon {
-        fill: $white-color;
-      }
+      background-color: getColor ('color-accent');
     }
+    &:hover .socials__icon,
+    &:focus .socials__icon {
+      fill: getColor ('color-white');
+    }
+  }
+  &__icon {
+    fill: getColor ('color-icon');
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -51,15 +56,20 @@
 }
 
 .socials__icon {
-  fill: $icon-color;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.socials__icon--light {
-  fill: $icon-color;
+  fill: getColor ('color-icon');
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.socials__icon--light {
+  fill: getColor ('color-icon');
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: getColor ('color-white');
+  }
+}
+
 .socials__icon--dark {
-  fill: $white-color;
+  fill: getColor ('color-white');
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

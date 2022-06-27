@@ -1,6 +1,6 @@
 body {
-  background-color: $white-color;
-  color: $main-text-color;
+  background-color: getColor ('color-white');
+  color: getColor ('color-main-text');
   font-family: 'Roboto', sans-serif;
 }
 

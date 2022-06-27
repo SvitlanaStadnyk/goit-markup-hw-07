@@ -1,23 +1,21 @@
 .project {
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: justify;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
   &__image {
     position: relative;
     overflow: hidden;
   }
   &__content {
     position: absolute;
-    color: $white-color;
+    color: getColor ('color-white');
     background-color: rgba(33, 150, 243, 0.9);
     top: 0;
     left: 0;
     $fw: 400;
     $fs: 18px;
     $lh: 1.55;
-    $letter-spacing: $letter-spacing;
+    $letter-spacing: var(--letter-spacing);
     width: 100%;
     height: 100%;
     padding: 63px 24px;
@@ -47,7 +45,7 @@
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      background-color: $white-color;
+      background-color: getColor ('color-white');
       box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
         0px 1px 1px rgba(0, 0, 0, 0.12);
       &:hover,
@@ -68,7 +66,7 @@
     }
   }
   &__title {
-    color: var(--main-text-color);
+    color: getColor ('color-main-text');
     $fw: 700;
     $fs: 18px;
     $lh: 2;
@@ -77,11 +75,11 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      background-color: var(--white-color);
+      background-color: getColor ('color-white');
     }
   }
   &__description {
-    color: var(--secondary-text-color);
+    color: getColor ('color-secondary-text');
     $fw: 400;
     $fs: 16px;
     $lh: 1.87;
@@ -89,19 +87,19 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      background-color: var(--white-color);
+      background-color: getColor ('color-white');
     }
   }
   &__text {
     border-right-width: 1px;
     border-right-style: solid;
-    border-right-color: $border-color;
+    border-right-color: getColor ('color-border');
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: $border-color;
+    border-bottom-color: getColor ('color-border');
     border-left-width: 1px;
     border-left-style: solid;
-    border-left-color: $border-color;
+    border-left-color: getColor ('color-border');
     padding-bottom: 20px;
     padding-top: 20px;
     padding-left: 24px;

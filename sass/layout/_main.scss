@@ -2,7 +2,7 @@
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-  background-color: $bg-color;
+  background-color: getColor ('color-bg');
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/main-bg.jpg);
   background-repeat: no-repeat;
@@ -21,7 +21,7 @@
     $fs: 44px;
     $lh: 1.36;
     $letter-spacing: 0.06em;
-    color: $white-color;
+    color: getColor ('color-white');
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 30px;
@@ -29,8 +29,8 @@
     padding-right: 252px;
   }
   &__btn {
-    color: $white-color;
-    background-color: $accent-color;
+    color: getColor ('color-white');
+    background-color: getColor ('color-accent');
     $fw: 700;
     $lh: 1.88em;
     $letter-spacing: 0.06em;
@@ -45,8 +45,8 @@
       font-weight: 700;
       font-size: 16px;
       line-height: 1.88;
-      color: $white-color;
-      background-color: $accent-color;
+      color: getColor ('color-white');
+      background-color: getColor ('color-accent');
     }
   }
 }

@@ -5,7 +5,7 @@
   &__text {
     @extend %textStyle;
     $lh: 1.17;
-    $letter-spacing: $letter-spacing;
+    $letter-spacing: var(--letter-spacing);
     text-transform: uppercase;
     font-style: normal;
     color: rgba(255, 255, 255, 1);
@@ -13,8 +13,8 @@
     display: flex;
   }
   &__btn {
-    background-color: $accent-color;
-    color: $white-color;
+    background-color: getColor ('color-accent');
+    color: getColor ('color-white');
     $fw: 700;
     $lh: 1.88;
     $ls: 0.06em;
@@ -46,7 +46,7 @@
     $fw: 400;
     $fs: 16px;
     $lh: 1.25;
-    $ls: $letter-spacing;
+    $ls: var(--letter-spacing);
     color: rgba(255, 255, 255, 0.6);
     margin-right: 12px;
     outline: none;

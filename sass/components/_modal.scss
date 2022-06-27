@@ -19,7 +19,7 @@
   width: 528px;
   height: 581px;
   border-radius: 4px;
-  background-color: $white-color;
+  background-color: getColor ('color-white');
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   position: absolute;
@@ -32,8 +32,8 @@
     $fw: 700;
     $fs: 20px;
     $lh: 1.17;
-    $ls: $letter-spacing;
-    color: $main-text-color;
+    $ls: var(--letter-spacing);
+    color: getColor ('color-main-text');
     text-align: center;
     margin-bottom: 12px;
   }
@@ -60,10 +60,10 @@
     outline: none;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus {
-      border-color: $accent-color;
+      border-color: getColor ('color-accent');
     }
     &:focus + .modal__icon {
-      fill: $accent-color;
+      fill: getColor ('color-accent');
     }
   }
   &__label {
@@ -71,7 +71,7 @@
     $fs: 12px;
     $lh: 1.17;
     $ls: 0.01em;
-    color: $secondary-text-color;
+    color: getColor ('color-secondary-text');
     display: block;
     margin-bottom: 4px;
     outline: none;
@@ -84,7 +84,7 @@
     height: 15px;
     width: 16px;
     text-align: center;
-    color: $main-text-color;
+    color: getColor ('color-main-text');
   }
   &__text {
     display: block;
@@ -97,10 +97,10 @@
     cursor: pointer;
     outline: none;
     &:focus {
-      border-color: $accent-color;
+      border-color: getColor ('color-accent');
     }
     &:focus + .modal__icon {
-      fill: $accent-color;
+      fill: getColor ('color-accent');
     }
     &::placeholder {
       color: rgba(117, 117, 117, 0.5);
@@ -117,7 +117,7 @@
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: $white-color;
+  background-color: getColor ('color-white');
   position: absolute;
   top: 8px;
   right: 8px;
@@ -131,8 +131,8 @@
 }
 
 .modal-submit__btn {
-  background-color: $accent-color;
-  color: $white-color;
+  background-color: getColor ('color-accent');
+  color: getColor ('color-white');
   $fw: 700;
   $fs: 16px;
   $lh: 1.88;
@@ -150,8 +150,8 @@
   $fw: 400;
   $fs: 14px;
   $lh: 1.71;
-  $ls: $letter-spacing;
-  color: $secondary-text-color;
+  $ls: var(--letter-spacing);
+  color: getColor ('color-secondaty-text');
   cursor: pointer;
   @extend %align-list;
   justify-content: center;
@@ -160,7 +160,7 @@
     content: '';
     width: 15px;
     height: 16px;
-    border: 2px solid $main-text-color;
+    border: 2px solid getColor ('color-main-text');
     border-radius: 3px;
     margin-right: 7px;
     box-sizing: border-box;
@@ -182,5 +182,5 @@
 
 .agreement__link {
   margin-left: 5px;
-  color: $accent-color;
+  color: getColor ('color-accent');
 }

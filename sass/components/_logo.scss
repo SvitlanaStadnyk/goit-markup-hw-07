@@ -6,11 +6,11 @@
   display: block;
 }
 .logo-part {
-  color: $accent-color;
+  color: getColor ('color-accent');
 }
 
 .logo--light {
-  color: $white-color;
+  color: getColor ('color-white');
   font-style: normal;
   text-decoration: none;
   margin-bottom: 20px;
@@ -21,8 +21,8 @@
 }
 
 .logo--dark {
-  color: $black-color;
-  $ls: $letter-spacing;
+  color: getColor ('color-black');
+  $ls: var(--letter-spacing);
   align-items: center;
   margin-right: 50px;
 }

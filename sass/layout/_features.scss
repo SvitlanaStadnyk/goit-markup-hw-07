@@ -1,5 +1,5 @@
 .features {
-  background-color: $white-color;
+  background-color: getColor ('color-white');
   padding-bottom: 0px;
   &__list {
     display: flex;
@@ -22,8 +22,8 @@
   &__title {
     @extend %textStyle;
     $lh: 1.14;
-    $ls: $letter-spacing;
-    color: $main-text-color;
+    $ls: var(--letter-spacing);
+    color: getColor ('color-main-text');
     text-transform: uppercase;
     margin-bottom: 10px;
     text-align: auto;
@@ -32,8 +32,8 @@
     $fw: 400;
     $fs: 14px;
     $lh: 1.71;
-    $ls: $letter-spacing;
-    color: $secondary-text-color;
+    $ls: var(--letter-spacing);
+    color: getColor ('color-secondary-text');
     width: 270px;
   }
 }

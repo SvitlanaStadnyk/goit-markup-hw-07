@@ -1,8 +1,8 @@
 .header {
-  background-color: $white-color;
+  background-color: getColor ('color-white');
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: $border-color;
+  border-bottom-color: getColor ('color-border');
   padding-top: 32px;
   padding-bottom: 32px;
   .container {
