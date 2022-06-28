@@ -8,3 +8,7 @@ $color-border: #eeeeee;
 $color-main-btn: #ffffff;
 $color-black: #000000;
 $color-white: #ffffff;
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
